@@ -5,41 +5,37 @@
 <h1 align="center">Kitewell</h1>
 
 <p align="center">
-  <strong>Stellar Testnet lab</strong> — Freighter wallet UX, Horizon API, and a Soroban builder registry.
+  Wallet tooling for <strong>Stellar Testnet</strong>.
 </p>
 
 <p align="center">
-  <img src="banner.png" alt="Kitewell — Stellar Testnet Lab" width="100%" />
+  <img src="banner.png" alt="Kitewell" width="100%" />
 </p>
 
-Kitewell is the three-layer stack for [Stellar Wave / Drips](https://www.drips.network/wave/stellar) contributors. Connect a Freighter wallet, fund on Testnet, manage trustlines, send XLM, and check in on-chain.
+Kitewell is a small Stellar stack for trying real wallet flows on Testnet: connect [Freighter](https://www.freighter.app/), fund an account, manage trustlines, send XLM, and read payment history. An API in front of Horizon keeps the UI off the raw network, and a Soroban contract stores optional on-chain check-ins.
+
+Signing never leaves Freighter. The backend does not handle secret keys. Default network is Testnet.
 
 ## Repositories
 
-| Layer | Repo | Role |
-|-------|------|------|
-| **Frontend** | [frontend](https://github.com/Kitewell-lab/frontend) | React + Vite + Freighter wallet lab |
-| **Backend** | [backend](https://github.com/Kitewell-lab/backend) | Express API — Horizon helpers, network + contract config |
-| **Contract** | [contract](https://github.com/Kitewell-lab/contract) | Soroban registry (`register` / `get_builder` / `lab_name`) |
+| | Repo | What it does |
+|---|------|----------------|
+| App | [frontend](https://github.com/Kitewell-lab/frontend) | React + Vite wallet UI |
+| API | [backend](https://github.com/Kitewell-lab/backend) | Horizon account and payment reads |
+| Contract | [contract](https://github.com/Kitewell-lab/contract) | Soroban registry |
 
-## Quick start
+## Run locally
 
 ```bash
-# terminal 1
 git clone https://github.com/Kitewell-lab/backend.git
 cd backend && npm install && npm run dev
 
-# terminal 2
 git clone https://github.com/Kitewell-lab/frontend.git
 cd frontend && npm install && npm run dev
 ```
 
-Freighter must be on **Testnet**. Open http://localhost:5173.
-
-## Also in this org
-
-[Helios Lab](https://github.com/Kitewell-lab/helios-lab) is a separate Wave submission (monorepo). Kitewell is the split frontend / backend / contract project.
+Open http://localhost:5173 with Freighter set to Testnet.
 
 ## License
 
-MIT across Kitewell repos. Testnet only by default — no Mainnet funds.
+MIT. Testnet only by default.
