@@ -18,19 +18,19 @@ Kitewell is the three-layer stack for [Stellar Wave / Drips](https://www.drips.n
 
 | Layer | Repo | Role |
 |-------|------|------|
-| **Frontend** | [frontend](https://github.com/ayyldCem-0/frontend) | React + Vite + Freighter wallet lab |
-| **Backend** | [backend](https://github.com/ayyldCem-0/backend) | Express API — Horizon helpers, network + contract config |
-| **Contract** | [contract](https://github.com/ayyldCem-0/contract) | Soroban registry (`register` / `get_builder` / `lab_name`) |
+| **Frontend** | [frontend](https://github.com/Kitewell-lab/frontend) | React + Vite + Freighter wallet lab |
+| **Backend** | [backend](https://github.com/Kitewell-lab/backend) | Express API — Horizon helpers, network + contract config |
+| **Contract** | [contract](https://github.com/Kitewell-lab/contract) | Soroban registry (`register` / `get_builder` / `lab_name`) |
 
 ## Quick start
 
 ```bash
 # terminal 1
-git clone https://github.com/ayyldCem-0/backend.git
+git clone https://github.com/Kitewell-lab/backend.git
 cd backend && npm install && npm run dev
 
 # terminal 2
-git clone https://github.com/ayyldCem-0/frontend.git
+git clone https://github.com/Kitewell-lab/frontend.git
 cd frontend && npm install && npm run dev
 ```
 
@@ -38,7 +38,7 @@ Freighter must be on **Testnet**. Open http://localhost:5173.
 
 ## Also in this org
 
-[Helios Lab](https://github.com/ayyldCem-0/helios-lab) is a separate Wave submission (monorepo). Kitewell is the split frontend / backend / contract project.
+[Helios Lab](https://github.com/Kitewell-lab/helios-lab) is a separate Wave submission (monorepo). Kitewell is the split frontend / backend / contract project.
 
 ## License
 

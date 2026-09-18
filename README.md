@@ -1,5 +1,5 @@
 # Kitewell organization profile
 
-This repository powers the [ayyldCem-0](https://github.com/ayyldCem-0) GitHub org README.
+This repository powers the [Kitewell-lab](https://github.com/Kitewell-lab) GitHub org README.
 
 Assets live in `profile/`.
